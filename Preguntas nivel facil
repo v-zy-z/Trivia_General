@@ -1,0 +1,737 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
+ */
+package preguntas;
+import java.util.Scanner;
+/**
+ *
+ * @author DELL
+ */
+public class Preguntas {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        
+        // Preguntas de Java
+        
+        Scanner scan = new Scanner(System.in);
+        System.out.println("BIENVENIDO A LA TRIVIA");
+        String respuesta;
+        int contador = 0;      
+               
+        // Preguntas de Java
+        
+        System.out.println("¿Cuál es el país más pequeño del mundo?");
+        System.out.println("A.- Mónaco");
+        System.out.println("B.- Nauru");
+        System.out.println("C.- Ciudad del Vaticano");
+        System.out.println("D.- Malta");
+        respuesta = scan.nextLine();
+        if (respuesta.equalsIgnoreCase("C")) {
+            System.out.println("CORRECTA");
+            contador += 1;
+        } else {
+            System.out.println("INCORRECTA");
+        }
+
+        System.out.println("¿En qué país se encuentra el desierto del Sahara?");
+        System.out.println("A.- Egipto");
+        System.out.println("B.- Brasil");
+        System.out.println("C.- Sudáfrica");
+        System.out.println("D.- Marruecos");
+        respuesta = scan.nextLine();
+        if (respuesta.equalsIgnoreCase("A")) {
+            System.out.println("CORRECTA");
+            contador += 1;
+        } else {
+            System.out.println("INCORRECTA");
+        }
+
+        System.out.println("¿Qué animal es conocido como 'el rey de la selva'?");
+        System.out.println("A.- Tigre");
+        System.out.println("B.- León");
+        System.out.println("C.- Pantera");
+        System.out.println("D.- Elefante");
+        respuesta = scan.nextLine();
+        if (respuesta.equalsIgnoreCase("B")) {
+            System.out.println("CORRECTA");
+            contador += 1;
+        } else {
+            System.out.println("INCORRECTA");
+        }
+
+        System.out.println("¿Cuál es el planeta más cercano al Sol?");
+        System.out.println("A.- Venus");
+        System.out.println("B.- Mercurio");
+        System.out.println("C.- Marte");
+        System.out.println("D.- Júpiter");
+        respuesta = scan.nextLine();
+        if (respuesta.equalsIgnoreCase("B")) {
+            System.out.println("CORRECTA");
+            contador += 1;
+        } else {
+            System.out.println("INCORRECTA");
+        }
+
+        System.out.println("¿Quién fue el primer presidente de los Estados Unidos?");
+        System.out.println("A.- Thomas Jefferson");
+        System.out.println("B.- Abraham Lincoln");
+        System.out.println("C.- George Washington");
+        System.out.println("D.- John Adams");
+        respuesta = scan.nextLine();
+        if (respuesta.equalsIgnoreCase("C")) {
+            System.out.println("CORRECTA");
+            contador += 1;
+        } else {
+            System.out.println("INCORRECTA");
+        }
+
+        System.out.println("¿Qué país es famoso por la Torre de Pisa?");
+        System.out.println("A.- Francia");
+        System.out.println("B.- Italia");
+        System.out.println("C.- Alemania");
+        System.out.println("D.- España");
+        respuesta = scan.nextLine();
+        if (respuesta.equalsIgnoreCase("B")) {
+            System.out.println("CORRECTA");
+            contador += 1;
+        } else {
+            System.out.println("INCORRECTA");
+        }
+
+        System.out.println("¿Qué instrumento musical tiene teclas blancas y negras?");
+        System.out.println("A.- Violín");
+        System.out.println("B.- Piano");
+        System.out.println("C.- Flauta");
+        System.out.println("D.- Guitarra");
+        respuesta = scan.nextLine();
+        if (respuesta.equalsIgnoreCase("B")) {
+            System.out.println("CORRECTA");
+            contador += 1;
+        } else {
+            System.out.println("INCORRECTA");
+        }
+
+        System.out.println("¿Qué océano está entre África y Australia?");
+        System.out.println("A.- Atlántico");
+        System.out.println("B.- Índico");
+        System.out.println("C.- Pacífico");
+        System.out.println("D.- Ártico");
+        respuesta = scan.nextLine();
+        if (respuesta.equalsIgnoreCase("B")) {
+            System.out.println("CORRECTA");
+            contador += 1;
+        } else {
+            System.out.println("INCORRECTA");
+           
+        }
+        System.out.println("¿Qué gas inhalamos para sobrevivir?");
+        System.out.println("A.- Oxígeno");
+        System.out.println("B.- Nitrógeno");
+        System.out.println("C.- Helio");
+        respuesta = scan.nextLine();
+        if (respuesta.equalsIgnoreCase("A")) {
+            System.out.println("CORRECTA");
+            contador += 1;
+        } else {
+            System.out.println("INCORRECTA");
+        }
+
+        System.out.println("¿Qué animal pone huevos y vuela?");
+        System.out.println("A.- Murciélago");
+        System.out.println("B.- Gallina");
+        System.out.println("C.- Águila");
+        respuesta = scan.nextLine();
+        if (respuesta.equalsIgnoreCase("C")) {
+            System.out.println("CORRECTA");
+            contador += 1;
+        } else {
+            System.out.println("INCORRECTA");
+        }
+
+        System.out.println("¿Cuál es el símbolo químico del sodio?");
+        System.out.println("A.- So");
+        System.out.println("B.- Sa");
+        System.out.println("C.- Na");
+        respuesta = scan.nextLine();
+        if (respuesta.equalsIgnoreCase("C")) {
+            System.out.println("CORRECTA");
+            contador += 1;
+        } else {
+            System.out.println("INCORRECTA");
+        }
+
+        System.out.println("¿Cuál es la capital de Canadá?");
+        System.out.println("A.- Toronto");
+        System.out.println("B.- Vancouver");
+        System.out.println("C.- Ottawa");
+        respuesta = scan.nextLine();
+        if (respuesta.equalsIgnoreCase("C")) {
+            System.out.println("CORRECTA");
+            contador += 1;
+        } else {
+            System.out.println("INCORRECTA");
+        }
+
+        System.out.println("¿Qué parte del cuerpo humano produce insulina?");
+        System.out.println("A.- Riñón");
+        System.out.println("B.- Páncreas");
+        System.out.println("C.- Hígado");
+        respuesta = scan.nextLine();
+        if (respuesta.equalsIgnoreCase("B")) {
+            System.out.println("CORRECTA");
+            contador += 1;
+        } else {
+            System.out.println("INCORRECTA");
+        }
+
+        System.out.println("¿Cuántos colores tiene un arcoíris?");
+        System.out.println("A.- 5");
+        System.out.println("B.- 7");
+        System.out.println("C.- 6");
+        respuesta = scan.nextLine();
+        if (respuesta.equalsIgnoreCase("B")) {
+            System.out.println("CORRECTA");
+            contador += 1;
+        } else {
+            System.out.println("INCORRECTA");
+        }
+
+        System.out.println("¿Quién pintó 'Las Meninas'?");
+        System.out.println("A.- Diego Velázquez");
+        System.out.println("B.- Salvador Dalí");
+        System.out.println("C.- Francisco Goya");
+        respuesta = scan.nextLine();
+        if (respuesta.equalsIgnoreCase("A")) {
+            System.out.println("CORRECTA");
+            contador += 1;
+        } else {
+            System.out.println("INCORRECTA");
+        }
+
+        System.out.println("¿Cuál es el país donde se originaron los Juegos Olímpicos?");
+        System.out.println("A.- Italia");
+        System.out.println("B.- Grecia");
+        System.out.println("C.- China");
+        respuesta = scan.nextLine();
+        if (respuesta.equalsIgnoreCase("B")) {
+            System.out.println("CORRECTA");
+            contador += 1;
+        } else {
+            System.out.println("INCORRECTA");
+        }
+
+        System.out.println("¿Qué animal es símbolo de sabiduría?");
+        System.out.println("A.- Gato");
+        System.out.println("B.- Búho");
+        System.out.println("C.- Perro");
+        respuesta = scan.nextLine();
+        if (respuesta.equalsIgnoreCase("B")) {
+            System.out.println("CORRECTA");
+            contador += 1;
+        } else {
+            System.out.println("INCORRECTA");
+        }
+
+        System.out.println("¿Cuál es el idioma oficial de Brasil?");
+        System.out.println("A.- Español");
+        System.out.println("B.- Portugués");
+        System.out.println("C.- Italiano");
+        respuesta = scan.nextLine();
+        if (respuesta.equalsIgnoreCase("B")) {
+            System.out.println("CORRECTA");
+            contador += 1;
+        } else {
+            System.out.println("INCORRECTA");
+        }
+
+        System.out.println("¿Cuál es el continente más poblado?");
+        System.out.println("A.- África");
+        System.out.println("B.- América");
+        System.out.println("C.- Asia");
+        respuesta = scan.nextLine();
+        if (respuesta.equalsIgnoreCase("C")) {
+            System.out.println("CORRECTA");
+            contador += 1;
+        } else {
+            System.out.println("INCORRECTA");
+        }
+
+        System.out.println("¿Cuántos segundos tiene un minuto?");
+        System.out.println("A.- 100");
+        System.out.println("B.- 60");
+        System.out.println("C.- 90");
+        respuesta = scan.nextLine();
+        if (respuesta.equalsIgnoreCase("B")) {
+            System.out.println("CORRECTA");
+            contador += 1;
+        } else {
+            System.out.println("INCORRECTA");
+        }
+
+        System.out.println("¿Cuál es el único número primo par?");
+        System.out.println("A.- 2");
+        System.out.println("B.- 4");
+        System.out.println("C.- 6");
+        respuesta = scan.nextLine();
+        if (respuesta.equalsIgnoreCase("A")) {
+            System.out.println("CORRECTA");
+            contador += 1;
+        } else {
+            System.out.println("INCORRECTA");
+        }
+
+        System.out.println("¿Cuál es el valor de π?");
+        System.out.println("A.- 3.1416");
+        System.out.println("B.- 2.7182");
+        System.out.println("C.- 1.6180");
+        respuesta = scan.nextLine();
+        if (respuesta.equalsIgnoreCase("A")) {
+            System.out.println("CORRECTA");
+            contador += 1;
+        } else {
+            System.out.println("INCORRECTA");
+        }
+
+        System.out.println("¿Con qué se mide la temperatura?");
+        System.out.println("A.- Termómetro");
+        System.out.println("B.- Barómetro");
+        System.out.println("C.- Higrómetro");
+        respuesta = scan.nextLine();
+        if (respuesta.equalsIgnoreCase("A")) {
+            System.out.println("CORRECTA");
+            contador += 1;
+        } else {
+            System.out.println("INCORRECTA");
+        }
+
+        System.out.println("¿El sol es una?");
+        System.out.println("A.- Estrella");
+        System.out.println("B.- Planeta");
+        System.out.println("C.- Satélite");
+        respuesta = scan.nextLine();
+        if (respuesta.equalsIgnoreCase("A")) {
+            System.out.println("CORRECTA");
+            contador += 1;
+        } else {
+            System.out.println("INCORRECTA");
+        }
+
+        System.out.println("¿Cuál es el país más grande del mundo?");
+        System.out.println("A.- Canadá");
+        System.out.println("B.- Rusia");
+        System.out.println("C.- China");
+        respuesta = scan.nextLine();
+        if (respuesta.equalsIgnoreCase("B")) {
+            System.out.println("CORRECTA");
+            contador += 1;
+        } else {
+            System.out.println("INCORRECTA");
+        }
+
+        System.out.println("¿Cuál es la capital de Francia?");
+        System.out.println("A.- París");
+        System.out.println("B.- Lyon");
+        System.out.println("C.- Marsella");
+        respuesta = scan.nextLine();
+        if (respuesta.equalsIgnoreCase("A")) {
+            System.out.println("CORRECTA");
+            contador += 1;
+        } else {
+            System.out.println("INCORRECTA");
+        }
+
+        System.out.println("¿Quién pintó la Mona Lisa?");
+        System.out.println("A.- Leonardo Da Vinci");
+        System.out.println("B.- Miguel Ángel");
+        System.out.println("C.- Rafael");
+        respuesta = scan.nextLine();
+        if (respuesta.equalsIgnoreCase("A")) {
+            System.out.println("CORRECTA");
+            contador += 1;
+        } else {
+            System.out.println("INCORRECTA");
+        }
+
+        System.out.println("¿Quién pintó “La última cena”?");
+        System.out.println("A.- Leonardo Da Vinci");
+        System.out.println("B.- Pablo Picasso");
+        System.out.println("C.- Salvador Dalí");
+        respuesta = scan.nextLine();
+        if (respuesta.equalsIgnoreCase("A")) {
+            System.out.println("CORRECTA");
+            contador += 1;
+        } else {
+            System.out.println("INCORRECTA");
+        }
+
+        System.out.println("¿Cuál es el océano más grande?");
+        System.out.println("A.- Atlántico");
+        System.out.println("B.- Pacífico");
+        System.out.println("C.- Índico");
+        respuesta = scan.nextLine();
+        if (respuesta.equalsIgnoreCase("B")) {
+            System.out.println("CORRECTA");
+            contador += 1;
+        } else {
+            System.out.println("INCORRECTA");
+        }
+
+        System.out.println("¿Proceso por el cual respiran las plantas?");
+        System.out.println("A.- Fotosíntesis");
+        System.out.println("B.- Respiración");
+        System.out.println("C.- Transpiración");
+        respuesta = scan.nextLine();
+        if (respuesta.equalsIgnoreCase("A")) {
+            System.out.println("CORRECTA");
+            contador += 1;
+        } else {
+            System.out.println("INCORRECTA");
+        }
+
+        System.out.println("¿Cuál es la moneda de Estados Unidos?");
+        System.out.println("A.- Dólar");
+        System.out.println("B.- Euro");
+        System.out.println("C.- Libra");
+        respuesta = scan.nextLine();
+        if (respuesta.equalsIgnoreCase("A")) {
+            System.out.println("CORRECTA");
+            contador += 1;
+        } else {
+            System.out.println("INCORRECTA");
+        }
+
+        System.out.println("¿El animal terrestre más pesado?");
+        System.out.println("A.- Elefante");
+        System.out.println("B.- Rinoceronte");
+        System.out.println("C.- Hipopótamo");
+        respuesta = scan.nextLine();
+        if (respuesta.equalsIgnoreCase("A")) {
+            System.out.println("CORRECTA");
+            contador += 1;
+        } else {
+            System.out.println("INCORRECTA");
+        }
+
+        System.out.println("¿Fórmula del agua?");
+        System.out.println("A.- H2O");
+        System.out.println("B.- CO2");
+        System.out.println("C.- O2");
+        respuesta = scan.nextLine();
+        if (respuesta.equalsIgnoreCase("A")) {
+            System.out.println("CORRECTA");
+            contador += 1;
+        } else {
+            System.out.println("INCORRECTA");
+        }
+
+        System.out.println("¿Cómo se llama el fundador de Facebook?");
+        System.out.println("A.- Mark Zuckerberg");
+        System.out.println("B.- Elon Musk");
+        System.out.println("C.- Bill Gates");
+        respuesta = scan.nextLine();
+        if (respuesta.equalsIgnoreCase("A")) {
+            System.out.println("CORRECTA");
+            contador += 1;
+        } else {
+            System.out.println("INCORRECTA");
+        }
+
+        System.out.println("¿Cuál es el país más poblado del mundo?");
+        System.out.println("A.- India");
+        System.out.println("B.- China");
+        System.out.println("C.- Estados Unidos");
+        respuesta = scan.nextLine();
+        if (respuesta.equalsIgnoreCase("B")) {
+            System.out.println("CORRECTA");
+            contador += 1;
+        } else {
+            System.out.println("INCORRECTA");
+        }
+
+        System.out.println("¿Cuál es el deporte más popular del mundo?");
+        System.out.println("A.- Fútbol");
+        System.out.println("B.- Béisbol");
+        System.out.println("C.- Baloncesto");
+        respuesta = scan.nextLine();
+        if (respuesta.equalsIgnoreCase("A")) {
+            System.out.println("CORRECTA");
+            contador += 1;
+        } else {
+            System.out.println("INCORRECTA");
+        }
+
+        System.out.println("¿Cuántos lados tiene un octaedro?");
+        System.out.println("A.- 6");
+        System.out.println("B.- 8");
+        System.out.println("C.- 10");
+        respuesta = scan.nextLine();
+        if (respuesta.equalsIgnoreCase("B")) {
+            System.out.println("CORRECTA");
+            contador += 1;
+        } else {
+            System.out.println("INCORRECTA");
+        }
+
+        System.out.println("¿Cuál es el mamífero más grande?");
+        System.out.println("A.- Elefante");
+        System.out.println("B.- Ballena azul");
+        System.out.println("C.- Hipopótamo");
+        respuesta = scan.nextLine();
+        if (respuesta.equalsIgnoreCase("B")) {
+            System.out.println("CORRECTA");
+            contador += 1;
+        } else {
+            System.out.println("INCORRECTA");
+        }
+
+        System.out.println("¿Cuál es el idioma más hablado en el mundo?");
+        System.out.println("A.- Inglés");
+        System.out.println("B.- Chino mandarín");
+        System.out.println("C.- Español");
+        respuesta = scan.nextLine();
+        if (respuesta.equalsIgnoreCase("B")) {
+            System.out.println("CORRECTA");
+            contador += 1;
+        } else {
+            System.out.println("INCORRECTA");
+        }
+
+        System.out.println("¿Quién descubrió América?");
+        System.out.println("A.- Cristóbal Colón");
+        System.out.println("B.- Hernán Cortés");
+        System.out.println("C.- Vasco da Gama");
+        respuesta = scan.nextLine();
+        if (respuesta.equalsIgnoreCase("A")) {
+            System.out.println("CORRECTA");
+            contador += 1;
+        } else {
+            System.out.println("INCORRECTA");
+        }
+        
+        System.out.println("¿Cuál es el país con más volcanes activos?");
+        System.out.println("A.- Japón");
+        System.out.println("B.- Indonesia");
+        System.out.println("C.- México");
+        respuesta = scan.nextLine();
+        if (respuesta.equalsIgnoreCase("B")) {
+            System.out.println("CORRECTA");
+            contador += 1;
+        } else {
+            System.out.println("INCORRECTA");
+        }
+
+        System.out.println("¿Qué animal pone los huevos más grandes del mundo?");
+        System.out.println("A.- Tortuga");
+        System.out.println("B.- Avestruz");
+        System.out.println("C.- Pingüino emperador");
+        respuesta = scan.nextLine();
+        if (respuesta.equalsIgnoreCase("B")) {
+            System.out.println("CORRECTA");
+            contador += 1;
+        } else {
+            System.out.println("INCORRECTA");
+        }
+
+        System.out.println("¿En qué continente está el desierto del Sahara?");
+        System.out.println("A.- Asia");
+        System.out.println("B.- África");
+        System.out.println("C.- América");
+        respuesta = scan.nextLine();
+        if (respuesta.equalsIgnoreCase("B")) {
+            System.out.println("CORRECTA");
+            contador += 1;
+        } else {
+            System.out.println("INCORRECTA");
+        }
+
+        System.out.println("¿Qué científico propuso la ley de la gravedad?");
+        System.out.println("A.- Galileo Galilei");
+        System.out.println("B.- Isaac Newton");
+        System.out.println("C.- Stephen Hawking");
+        respuesta = scan.nextLine();
+        if (respuesta.equalsIgnoreCase("B")) {
+            System.out.println("CORRECTA");
+            contador += 1;
+        } else {
+            System.out.println("INCORRECTA");
+        }
+
+        System.out.println("¿Qué país ganó el Mundial de Fútbol en 2010?");
+        System.out.println("A.- Alemania");
+        System.out.println("B.- Argentina");
+        System.out.println("C.- España");
+        respuesta = scan.nextLine();
+        if (respuesta.equalsIgnoreCase("C")) {
+            System.out.println("CORRECTA");
+            contador += 1;
+        } else {
+            System.out.println("INCORRECTA");
+        }
+
+        System.out.println("¿Cuál es el río más largo del mundo?");
+        System.out.println("A.- Amazonas");
+        System.out.println("B.- Nilo");
+        System.out.println("C.- Yangtsé");
+        respuesta = scan.nextLine();
+        if (respuesta.equalsIgnoreCase("A")) {
+            System.out.println("CORRECTA");
+            contador += 1;
+        } else {
+            System.out.println("INCORRECTA");
+        }
+
+        System.out.println("¿Cuál es la capital de Canadá?");
+        System.out.println("A.- Toronto");
+        System.out.println("B.- Ottawa");
+        System.out.println("C.- Montreal");
+        respuesta = scan.nextLine();
+        if (respuesta.equalsIgnoreCase("B")) {
+            System.out.println("CORRECTA");
+            contador += 1;
+        } else {
+            System.out.println("INCORRECTA");
+        }
+
+        System.out.println("¿Cuál es el símbolo químico del sodio?");
+        System.out.println("A.- S");
+        System.out.println("B.- So");
+        System.out.println("C.- Na");
+        respuesta = scan.nextLine();
+        if (respuesta.equalsIgnoreCase("C")) {
+            System.out.println("CORRECTA");
+            contador += 1;
+        } else {
+            System.out.println("INCORRECTA");
+        }
+
+        System.out.println("¿Qué país inventó el papel?");
+        System.out.println("A.- China");
+        System.out.println("B.- Egipto");
+        System.out.println("C.- Grecia");
+        respuesta = scan.nextLine();
+        if (respuesta.equalsIgnoreCase("A")) {
+            System.out.println("CORRECTA");
+            contador += 1;
+        } else {
+            System.out.println("INCORRECTA");
+        }
+
+        System.out.println("¿Qué día se celebra el Día de la Tierra?");
+        System.out.println("A.- 21 de marzo");
+        System.out.println("B.- 22 de abril");
+        System.out.println("C.- 5 de junio");
+        respuesta = scan.nextLine();
+        if (respuesta.equalsIgnoreCase("B")) {
+            System.out.println("CORRECTA");
+            contador += 1;
+        } else {
+            System.out.println("INCORRECTA");
+        }
+
+        System.out.println("¿Cuál es el planeta más cercano al Sol?");
+        System.out.println("A.- Venus");
+        System.out.println("B.- Mercurio");
+        System.out.println("C.- Marte");
+        respuesta = scan.nextLine();
+        if (respuesta.equalsIgnoreCase("B")) {
+            System.out.println("CORRECTA");
+            contador += 1;
+        } else {
+            System.out.println("INCORRECTA");
+        }
+
+        System.out.println("¿Qué compositor creó la Novena Sinfonía?");
+        System.out.println("A.- Mozart");
+        System.out.println("B.- Beethoven");
+        System.out.println("C.- Chopin");
+        respuesta = scan.nextLine();
+        if (respuesta.equalsIgnoreCase("B")) {
+            System.out.println("CORRECTA");
+            contador += 1;
+        } else {
+            System.out.println("INCORRECTA");
+        }
+
+        System.out.println("¿Cuántos corazones tiene un pulpo?");
+        System.out.println("A.- Uno");
+        System.out.println("B.- Dos");
+        System.out.println("C.- Tres");
+        respuesta = scan.nextLine();
+        if (respuesta.equalsIgnoreCase("C")) {
+            System.out.println("CORRECTA");
+            contador += 1;
+        } else {
+            System.out.println("INCORRECTA");
+        }
+
+        System.out.println("¿Qué instrumento usa cuerdas y se toca con arco?");
+        System.out.println("A.- Guitarra");
+        System.out.println("B.- Violín");
+        System.out.println("C.- Flauta");
+        respuesta = scan.nextLine();
+        if (respuesta.equalsIgnoreCase("B")) {
+            System.out.println("CORRECTA");
+            contador += 1;
+        } else {
+            System.out.println("INCORRECTA");
+        }
+
+        System.out.println("¿Quién escribió “Cien años de soledad”?");
+        System.out.println("A.- Mario Vargas Llosa");
+        System.out.println("B.- Julio Cortázar");
+        System.out.println("C.- Gabriel García Márquez");
+        respuesta = scan.nextLine();
+        if (respuesta.equalsIgnoreCase("C")) {
+            System.out.println("CORRECTA");
+            contador += 1;
+        } else {
+            System.out.println("INCORRECTA");
+        }
+
+        System.out.println("¿Cuál es la capital de Marruecos?");
+        System.out.println("A.- Casablanca");
+        System.out.println("B.- Rabat");
+        System.out.println("C.- Fez");
+        respuesta = scan.nextLine();
+        if (respuesta.equalsIgnoreCase("B")) {
+            System.out.println("CORRECTA");
+            contador += 1;
+        } else {
+            System.out.println("INCORRECTA");
+        }
+
+        System.out.println("¿En qué país se encuentra la Torre de Hércules?");
+        System.out.println("A.- España");
+        System.out.println("B.- Grecia");
+        System.out.println("C.- Italia");
+        respuesta = scan.nextLine();
+        if (respuesta.equalsIgnoreCase("A")) {
+            System.out.println("CORRECTA");
+            contador += 1;
+        } else {
+            System.out.println("INCORRECTA");
+        }
+
+        System.out.println("¿Cuál es el elemento más abundante en el universo?");
+        System.out.println("A.- Oxígeno");
+        System.out.println("B.- Hidrógeno");
+        System.out.println("C.- Helio");
+        respuesta = scan.nextLine();
+        if (respuesta.equalsIgnoreCase("B")) {
+            System.out.println("CORRECTA");
+            contador += 1;
+        } else {
+            System.out.println("INCORRECTA");
+        }
+
+
+
+        
+            }
+
+
+        }
