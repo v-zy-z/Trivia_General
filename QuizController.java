@@ -1,0 +1,65 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
+package QuizController;
+
+import QuizModel.QuizModel;
+import QuizView.QuizView;
+
+/**
+ *
+ * @author ASUS TUF GAMING
+ */
+public class QuizController {
+    private QuizModel model;
+    private QuizView view;
+
+    public QuizController(QuizModel model, QuizView view) {
+        this.model = model;
+        this.view = view;
+    }
+
+    public void runQuiz(String[] answers) {
+        int score = 0;
+        int totalQuestions = model.getTotalQuestions();
+
+        if (answers.length != totalQuestions) {
+            System.out.println("Error: Se esperaban " + totalQuestions + " respuestas, pero se proporcionaron " + answers.length);
+            return;
+        }
+
+        for (int i = 0; i < totalQuestions; i++) {
+            view.displayQuestion(i, model.getQuestionText(i), model.getOptionA(i), model.getOptionB(i), model.getOptionC(i));
+            view.displayAnswer(answers[i]);
+            boolean isCorrect = model.askQuestion(i, answers[i]) == 1;
+            view.displayResult(isCorrect);
+            score += isCorrect ? 1 : 0;
+        }
+
+        view.displayFinalScore(score, totalQuestions);
+    }
+
+    public static void main(String[] args) {
+        // Create a test array of answers (all correct for demonstration)
+        String[] testAnswers = {
+            "a", "b", "c", "a", "b", "b", "b", "b", "c", "a",
+            "c", "b", "c", "a", "c", "a", "b", "a", "b", "a",
+            "c", "b", "b", "b", "a", "a", "b", "b", "b", "b",
+            "c", "b", "a", "c", "a", "b", "b", "a", "a", "a",
+            "b", "b", "a", "b", "b", "b", "a", "b", "a", "a",
+            "c", "b", "a", "a", "b", "b", "a", "b", "b", "b",
+            "c", "a", "a", "b", "a", "a", "b", "a", "b", "b",
+            "b", "b", "b", "c", "a", "b", "b", "c", "a", "c",
+            "c", "a", "c", "b", "a", "b", "b", "b", "b", "a",
+            "b", "b", "b", "b", "b", "a", "b", "a", "b", "b"
+        };
+
+        // Initialize MVC components
+        QuizModel model = new QuizModel();
+        QuizView view = new QuizView();
+        QuizController controller = new QuizController(model, view);
+        controller.runQuiz(testAnswers);
+    }
+}
+
