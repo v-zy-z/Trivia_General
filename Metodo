@@ -1,0 +1,15 @@
+package Metodo;
+
+public class Menu {
+
+    // Método 
+    public static int mostrarMenuDificultad() {
+        System.out.println("\nSelecciona el nivel de dificultad:");
+        System.out.println("1. Facil");
+        System.out.println("2. Intermedio");
+        System.out.println("3. Dificil");
+        System.out.print("Ingresa el numero de tu eleccion: ");
+        
+        return -1; 
+    }
+}
