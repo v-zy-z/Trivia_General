@@ -1,0 +1,103 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
+package controlador;
+
+/**
+ *
+ * @author le282
+ */
+public class controlador {
+    private final String[][] preguntas = {
+        {"¿Quién escribió Don Quijote de la Mancha?", "Isabel Allende", "Miguel de Cervantes", "Jorge Luis Borges", "b"},
+        {"¿Cuál es el metal cuyo símbolo químico es Au?", "Platino", "Magnesio", "Oro", "c"},
+        {"¿Qué instrumento mide los movimientos sísmicos?", "Esfingomanómetro", "Sismógrafo", "Tensiómetro", "b"},
+        {"¿En qué país se encuentran las pirámides de Giza?", "Egipto", "Estados Unidos", "Canadá", "a"},
+        {"¿Qué gas es esencial para que respiren los seres humanos?", "Dióxido de carbono", "Ácido nítrico", "Oxígeno", "c"},
+        {"¿Qué número representa la letra “L” en números romanos?", "10", "50", "20", "b"},
+        {"¿Quién es considerado el padre de las matemáticas?", "Arquímedes", "Jordán Gauss", "Isaac Newton", "a"},
+        {"¿Quién descubrió el signo ∮ en el cálculo integral?", "Leonhard Euler", "Arnold Sommerfeld", "René Descartes", "b"},
+        {"¿Cuántas zonas horarias tiene Rusia?", "14", "15", "11", "c"},
+        {"¿Cuál de los siguientes imperios no contaba con un sistema de escritura propio?", "Aztecas", "Inca", "Romanos", "b"},
+        {"¿Qué país posee la mayor cantidad de islas en el mundo?", "Islandia", "Australia", "Suecia", "c"},
+        {"¿Qué artista pintó el techo de la Capilla Sixtina en Roma?", "Vincent van Gogh", "Miguel Ángel", "Pablo Picasso", "b"},
+        {"¿Qué acontecimiento ocurrió el 20 de julio de 1969?", "La Guerra Fría", "La Revolución Industrial", "El alunizaje del Apollo 11", "c"},
+        {"¿En qué año se publicó la primera edición de la revista Vogue?", "1998", "1892", "1978", "b"},
+        {"¿Qué maravilla del mundo se encuentra en India?", "La Gran Barrera de Coral", "El Taj Mahal", "Las Cataratas del Iguazú", "b"},
+        {"¿Cómo se denominó la guerra entre Atenas y Esparta?", "La guerra de Atenas", "La guerra de los 100 años", "La guerra del Peloponeso", "c"},
+        {"¿Quién fue el primer ser humano en viajar al espacio?", "Eileen Collins", "Yuri Gagarin", "Sally Ride", "b"},
+        {"En lingüística, ¿cómo se conoce a la separación de dos vocales contiguas en diferentes sílabas?", "Prefijo", "Hiato", "Sufijo", "b"},
+        {"¿Quién descubrió la penicilina?", "Alexander Fleming", "Antoine-Laurent de Lavoisier", "Robert Boyle", "a"},
+        {"¿Cuántos versos componen un soneto?", "14 versos", "15 versos", "10 versos", "a"},
+        {"¿Qué invento revolucionó la lectura en el siglo XV?", "El reloj", "La imprenta", "El microscopio", "b"},
+        {"¿Cuál es el continente más pequeño del mundo?", "Europa", "Oceanía", "América", "b"},
+        {"¿En qué país nació la artista Frida Kahlo?", "Colombia", "México", "España", "b"},
+        {"¿Quién escribió 1984?", "Aldous Huxley", "George Orwell", "Ray Bradbury", "b"},
+        {"¿Qué animal se asocia tradicionalmente con la sabiduría?", "Búho", "Águila", "Zorro", "a"},
+        {"¿Qué instrumento utiliza para medir la humedad del ambiente?", "Barómetro", "Higrómetro", "Termómetro", "b"},
+        {"¿Dónde se inventó la brújula?", "Grecia", "Egipto", "China", "c"},
+        {"¿Cuál es el océano más profundo del planeta?", "Atlántico", "Índico", "Pacífico", "c"},
+        {"¿Cuál es el país más joven del mundo?", "Kosovo", "Sudán del Sur", "Timor Oriental", "b"},
+        {"¿En qué año se firmó la Magna Carta?", "1215", "1066", "1492", "a"},
+        {"¿Qué órgano humano filtra la sangre?", "Hígado", "Corazón", "Riñón", "c"},
+        {"¿Qué país cuenta con el mayor número de pirámides en el mundo?", "Egipto", "Sudán", "México", "b"},
+        {"¿Cuál es la capital de Turquía?", "Estambul", "Ankara", "Izmir", "b"},
+        {"¿Qué escritor creó el personaje de Sherlock Holmes?", "Agatha Christie", "Arthur Conan Doyle", "Edgar Allan Poe", "b"},
+        {"¿Qué fruta se utiliza para elaborar el vino?", "Uva", "Fresa", "Manzana", "a"},
+        {"¿Quién fue Cleopatra?", "Una reina egipcia", "Una filósofa griega", "Una guerrera romana", "a"},
+        {"¿Cuál es el país con más medallas olímpicas en la historia?", "Rusia", "China", "Estados Unidos", "c"},
+        {"¿Cuál es el libro más traducido en el mundo después de la Biblia?", "Don Quijote de la Mancha", "El Principito", "Harry Potter y la piedra filosofal", "b"},
+        {"¿Quién fue el arquitecto catalán reconocido por diseñar la Sagrada Familia?", "Lluís Domènech i Montaner", "Antoni Gaudí", "Ricardo Bofill", "b"},
+        {"¿En qué año cayó el Muro de Berlín?", "1989", "1991", "1987", "a"},
+        {"¿Cuál es la obra literaria más destacada de Gabriel García Márquez?", "Cien años de soledad", "El amor en los tiempos del cólera", "Crónica de una muerte anunciada", "a"},
+        {"¿Quién pintó La noche estrellada?", "Pablo Picasso", "Vincent van Gogh", "Salvador Dalí", "b"},
+        {"¿Cuál es la capital de Australia?", "Sydney", "Canberra", "Melbourne", "b"},
+        {"¿Qué científico desarrolló la teoría de la relatividad?", "Albert Einstein", "Isaac Newton", "Niels Bohr", "a"},
+        {"¿En qué país se originó el Renacimiento?", "Francia", "Italia", "Inglaterra", "b"},
+        {"¿Cuál es el elemento químico cuyo número atómico es 6?", "Oxígeno", "Carbono", "Nitrógeno", "b"},
+        {"¿Qué filósofo griego fue maestro de Alejandro Magno?", "Sócrates", "Aristóteles", "Platón", "b"},
+        {"¿Qué ciudad es considerada la cuna del Renacimiento?", "Florencia", "Roma", "Venecia", "a"},
+        {"¿En qué siglo se produjo la Revolución Francesa?", "Siglo XVIII", "Siglo XVII", "Siglo XIX", "a"},
+        {"¿Quién compuso la Novena Sinfonía?", "Wolfgang Amadeus Mozart", "Ludwig van Beethoven", "Johann Sebastian Bach", "b"}
+        // Las preguntas 61 a 100 continúan aquí...
+    };
+
+    private int preguntaActual = 0;
+    private int puntaje = 0;
+
+    public String[] obtenerPregunta() {
+        if (preguntaActual < preguntas.length) {
+            return preguntas[preguntaActual];
+        } else {
+            return null;
+        }
+    }
+
+    public boolean verificarRespuesta(String respuesta) {
+        if (preguntaActual < preguntas.length) {
+            String correcta = preguntas[preguntaActual][4];
+            if (respuesta.equals(correcta)) {
+                puntaje++;
+                return true;
+            }
+        }
+        return false;
+    }
+
+    public void siguientePregunta() {
+        preguntaActual++;
+    }
+
+    public int getPuntaje() {
+        return puntaje;
+    }
+
+    public int getTotalPreguntas() {
+        return preguntas.length;
+    }
+
+    public boolean hayMasPreguntas() {
+        return preguntaActual < preguntas.length;
+    }
+}
